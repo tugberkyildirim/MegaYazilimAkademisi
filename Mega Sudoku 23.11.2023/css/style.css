@@ -1,0 +1,22 @@
+*{font-family: 'Segoe UI';user-select: none;-moz-user-select: none;-webkit-user-select: none;}
+.sudoku{
+    margin:5px auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    height:auto;
+}
+table{
+    font-size: 16px;
+    border-spacing: 0px;
+    width: 10rem;
+    height: 10rem;
+}
+tr,td{text-align:center;width: 2rem;height: 2rem;border: 1px solid #cccccc;background-color: #ffffff;}
+tr:nth-child(even) td,td:nth-child(even){
+    background-color: #f1f1f1;
+}
+h1{width: 100%;text-align: center;}
