@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuğberk Yıldırım</title>
+  </head>
+  <body>
+    <header>
+      <div id="menuarea"></div>
+    </header>
+      <div class="jumbotron text-center rounded-0 text-light bg-image p-0 h-100 w-100" id="title-bar">
+          <div class="mask h-100 w-100" style="background-color: rgba(0, 0, 0, 0.6);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                  <div class="text-light">
+                  <h1 class="d-flex align-items-center justify-content-center">TUĞBERK YILDIRIM</h1>
+                  </div>
+              </div>
+              <div class="container">
+                <footer class="py-3 my-4">
+                  <p class="text-center text-muted">© 2023 Tuğberk Yıldırım</p>
+                </footer>
+              </div>
+      </div>
+    </div>
+    <div id="root" class="p-3"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script>
+      try{
+          resim_yenile();
+          $(document).ready(function(){
+              setInterval(resim_yenile, 5000);
+          });
+      }catch(er){console.log(er);}
+  </script>
+  </body>
+</html>
