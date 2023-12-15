@@ -1,4 +1,5 @@
 # React + Vite
+Once you have downloaded the files, open the directory in a terminal and write the `npm install` command.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
