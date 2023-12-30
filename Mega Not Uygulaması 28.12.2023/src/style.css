@@ -1,0 +1,16 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+textarea{resize: none;}
+.form-control:focus{
+    border: 1px solid #adadad;
+    box-shadow: none;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.btn{
+    outline: none;
+    border: 0px;
+}
