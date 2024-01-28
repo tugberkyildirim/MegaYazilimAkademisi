@@ -23,4 +23,7 @@ Bu projede ReactJS, Vite, [Google Firebase](https://firebase.google.com/)  kulla
 		**projeler(baslik,durum,yazi)**:  "durum" kısmı iki türlüdür;
 			**fin:** Bu etiket bitmiş projeler içindir.	
 			**dvm:** Bu etiket devam eden projeler içindir.	
-	  **users(address,email,name,phone,surname,userrole)**: "userrole" kısmında 	   	Google Firebase de **Admin** yetkisi vermek isteğiniz kullanıcı için "Admin" yazmanız yeterli olacaktır. Admin paneline erişebilmek içinde **/adminpanel**  yazmanız yeterlidir.
+	  **users(address,email,name,phone,surname,userrole)**: "userrole" kısmında 	   	Google Firebase de **Admin** yetkisi vermek isteğiniz kullanıcı için "Admin" 	   yazmanız yeterli olacaktır. Admin paneline erişebilmek içinde **/adminpanel**  yazmanız yeterlidir.
+
+ 3. Oluşturduğunuz projenin config bilgilerini almak için **Project Overview** kısmında olan **ayarlar** simgesine tıklayıp **Your Apps** 'i buluyoruz. Burada **SDK setup and configuration** **Config** seçiyoruz. 
+ 4.  Config kısmındaki **apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId** alanlarındaki bilgileri "**/src/firebas.js**" ve "**/src/firestore.js**" 'nin içindeki ilgili alana yazıyoruz.
