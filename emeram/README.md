@@ -1,8 +1,26 @@
-# React + Vite
+# eMeram
+Bu projede ReactJS, Vite, [Google Firebase](https://firebase.google.com/)  kullanılmıştır.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Kurulum
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 1. İlk olarak [Google Firebase](https://firebase.google.com/)  'den **emeramauth**  adında bir **Web App** oluşturmalısınız.
+ 
+ 2. Oluşturduğunuz projede iki adet veritabanı daha oluşturucaksınız bunlar **Authentication** ve **Firestore Database** .
+	 
+	 - **Authentication:** Sign-in providers kısmını **Email/Password**  olarak ayarlıyoruz.
+	 - **Firestore Database:**  Bu kısımda toplam da  altı adet collection olması gerekiyor bunlar:
+	 
+		 **egitimler(baslik,url,yazi)**: Url kısmına YouTube video id girmelisiniz.
+		 
+		 **gorusler(baslik,cevap,kadi,yazi)**:  "kadi" kısmı gönderen kullanıcının mail 		
+			  adresini içerir.
+			  
+		 **haberler(baslik,yazi)**
+		 
+		 **iletisimbilgileri(adres,email,googlemap,telefon)**: "googlemap" kısmında 	 
+		 GoogleMap'de belirttiğiniz adresin linkini girmeniz gerekiyor.
+		 
+		**projeler(baslik,durum,yazi)**:  "durum" kısmı iki türlüdür;
+			**fin:** Bu etiket bitmiş projeler içindir.	
+			**dvm:** Bu etiket devam eden projeler içindir.	
+	  **users(address,email,name,phone,surname,userrole)**: "userrole" kısmında 	   	Google Firebase de **Admin** yetkisi vermek isteğiniz kullanıcı için "Admin" yazmanız yeterli olacaktır. Admin paneline erişebilmek içinde **/adminpanel**  yazmanız yeterlidir.
